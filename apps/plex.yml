@@ -9,6 +9,9 @@
 - hosts: localhost
   gather_facts: false
   tasks:
+    - name: 'Gather Needed Facts'
+      shell: './_plex.sh'
+    
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
