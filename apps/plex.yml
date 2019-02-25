@@ -9,6 +9,9 @@
 - hosts: localhost
   gather_facts: false
   tasks:
+    - name: 'Make script executable'
+      shell: 'chmod +x ./_plex.sh'
+    
     - name: 'Gather Needed Facts'
       shell: './_plex.sh'
     
